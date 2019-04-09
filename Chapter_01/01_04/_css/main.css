@@ -435,6 +435,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 }
 /* mobile styles */
 @media only screen and (max-width:480px) {
+/*disable text sizing on orientation change*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	-webkit-text-size-adjust:none;
+}
 
 body {
 	width: 90%;
@@ -448,17 +452,46 @@ header {
 	height: 70px;
 }
 
-/*banner styles*/
-.banner {
+header h1 {
+	font-size: 2em;
+	padding-left: 55px;
+	line-height: 70px;
+	width: 190px;
+	margin: 0 auto;
+	background: url(../_images/desolve_logo_50.png) no-repeat left center;
+}
+
+header h2 {
+	display: none;
+}
+
+/* mission styles*/
+.mission {
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: 2.4em;
 }
+
+.mission h1 {
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: .5em;
+}
+
+.mission p {
+	width: 90%;
+	font-size: .8em;
+	margin: 0 auto;
+	line-height: 2;
+}
+
 /* article styles */
 article {
 	width: 90%;
 	margin: 0 auto;
 }
+
 article section {
 	border-bottom: 2px solid rgb(76, 67, 65);
 	margin-bottom: 1.6em;
@@ -466,6 +499,127 @@ article section {
 	position: relative;
 	padding-bottom: 20px;
 }
+
+article h1 {
+	background: url(../_images/icon_sprites_50.png) no-repeat right top;
+	padding: 20px 0 5px;
+}
+
+article h2 {
+	font: 2em Cardo, Georgia, serif;
+	margin-bottom: 0;
+}
+
+.caption {
+	font-size: .85em;
+	margin-top: 1em;
+}
+
+article p.pubdate {
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+article .preview {
+	height: 175px;
+}
+
+.philly .preview {
+	background: url(../_images/sm_philly_banner.jpg) no-repeat;
+}
+
+.chicago .preview {
+	background: url(../_images/sm_chicago_banner.jpg) no-repeat;
+}
+
+.nyc .preview {
+	background: url(../_images/sm_nyc_banner.jpg) no-repeat;
+}
+
+/*gallery styles*/
+#gallery h1 {
+	font: 4em OstrichSansBold;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgb(123, 121, 143);
+}
+
+.intro {
+	margin-bottom: 2em;
+}
+
+.intro p {
+	font-size: .8em;
+	margin: 0 0 1em;
+}
+
+.photos img {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	margin-bottom:.8em;
+}
+.photos li {
+	position: relative;
+	float: none;
+}
+
+#gallery .photos a:after {
+	content: attr(title);
+	display: block;
+	width: 90%;
+	position: absolute;
+	top: 0;
+	left: 5%;
+	line-height: 2em;
+	color: white;
+	text-align: center;
+	background: rgba( 25, 25, 25, .8);
+	z-index: 500;
+}
+
+/*contact styles*/
+#contact h2 {
+	margin-bottom: 1em;
+}
+
+a.phone {
+	padding: .5em .5em .5em 30px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWBJREFUeNpiZMADfF2cEoCUAgN54MHmPfsW4JJkxGPpfCCVwEAZWAC0PJFoi4GWGgCp8wzUAYZAyy+gC7LgUCwAIpzd3BnEJCTIsu3VixcMe3fthJtFrMUMMIt19PXJsvjKxYswi7ECJoYBAqMWj1o8avGoxaMWj1o8+CzGWx/Pnj6VgYeHhyyDv3z5QromYNPHAYj/X75w4T8IVBUXotDLFi2Ey4HY2ORAGGQGyCxsdjBjE1RXUlSANfTu37vLcBnYmvj69SucvnLxAsOrly/BcjA2htzdu2AMBAtv3bv/gKQ4BjVdQG2ngtIyhhNHj8DpyNh4BkVlZbAciI1NDl+zZ0ATF67mLShe9sNamXt37mRwdneH06DgFBOXAMuB2Dr6BhhysBADAkdg8/YAWa1MkGGRsXFwejlQTldPHywHYmOTQ7KYJB/TvEGPNY6hChdQwdIF2CzF23eidacNIMAAxi/joc6jdacAAAAASUVORK5CYII=)no-repeat left center;
+	border: 1px solid rgb(123, 121, 143);
+	margin: 1em auto;
+	width: 200px;
+	display:block;
+}
+
+#contact li a {
+	padding-left: 30px;
+	line-height: 35px;
+	font-size: 1em;
+	display:block;
+	background-size: 20%;
+}
+a.phone:hover {
+	border: 1px solid rgb(123, 121, 143);
+}
+
+/*form styles*/
+fieldset {
+	width: 90%;
+}
+
+input[type="text"], input[type="email"], input[type="url"], textarea {
+	width: 95%;
+}
+
+fieldset p {
+	float: none;
+	width: auto;
+}
+
 /*aside styles*/
 aside {
 	width: 90%;
@@ -476,6 +630,49 @@ aside section {
 	clear: both;
 }
 
+aside h2 {
+	font-size: 1.6em;
+	margin: 1em 0 .8em;
+	padding-top: .8em;
+	border-top: 2px solid rgb(76, 67, 65);
+	text-align:center;
+}
+
+aside nav h2 {
+	border: none;
+	padding-top: 0;
+}
+
+aside nav {
+	margin-bottom: 2em;
+}
+
+nav select {
+	width: 200px;
+	margin-left: 20%;
+}
+
+.contest img {
+	display: block;
+	margin: 0 auto .8em;
+}
+.contest h3 {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.contest p {
+	font-size: .9em;
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+	width: 80%;
+	line-height: 1.5;
+}
+
+.enter a {
+	display: block;
+}
+
 /*footer styles*/
 #pageFooter {
 	clear:both;
@@ -483,7 +680,18 @@ aside section {
 	padding-bottom: 2em;
 }
 
-	
+#pageFooter form {
+	width: 90%;
+	margin: 0 auto 1em;
+}
+
+.notice {
+	width: 300px;
+}
+
+#pageFooter p {
+	margin-left: 5%;
+}
 }
 
 /*tablet styles*/
