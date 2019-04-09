@@ -491,6 +491,36 @@ header h2 {
 #mainNav a em {
 	display: none;
 }
+a.gallery {
+	background: url(../_images/icon_sprites_25.png) no-repeat center 30px;
+}
+
+a.gear {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -69px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -170px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -270px;
+}
+a.gallery {
+	background: url(../_images/icon_sprites_50.png) no-repeat center 25px;
+}
+
+a.gear {
+	background: url(../_images/icon_sprites_50.png) no-repeat center -175px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_50.png) no-repeat center -375px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_50.png) no-repeat center -578px;
+}
 
 /* mission styles*/
 .mission {
@@ -771,7 +801,21 @@ header h2 {
 #mainNav a em {
 	display: none;
 }
+a.gallery {
+	background: url(../_images/icon_sprites_25.png) no-repeat center 30px;
+}
 
+a.gear {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -69px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -170px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_25.png) no-repeat center -270px;
+}
 /* mission styles*/
 .mission {
 	padding-left: 3.9%;
@@ -1130,6 +1174,21 @@ header h2 {
 	font-size: .8em;
 	display: block;
 	text-transform: lowercase;
+}
+a.gallery {
+	background: url(../_images/icon_sprites_25.png) no-repeat 0 3px;
+}
+
+a.gear {
+	background: url(../_images/icon_sprites_25.png) no-repeat 38px -98px;
+}
+
+a.interact {
+	background: url(../_images/icon_sprites_25.png) no-repeat 62px -197px;
+}
+
+a.shop {
+	background: url(../_images/icon_sprites_25.png) no-repeat 6px -297px;
 }
 /* mission styles*/
 .mission {
