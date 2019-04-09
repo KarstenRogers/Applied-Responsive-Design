@@ -438,6 +438,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 
 @media only screen and (max-width: 480px) {
 
+	body {
+		width: 90%;
+		margin: 0 auto;
+		min-width: 320px;
+		max-width: 480px;
+	}
+
+	header {
+		height: 70px;
+	}
+
+	.mission {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 2.4em;
+	}
+
+	article {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	article section {
+		border-bottom: 2px solid rgb(76, 67, 65);
+		margin-bottom: 1.6em;
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 20px;
+	}
+
+	aside {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	aside section {
+		clear: both;
+	}
+
+	#pageFooter {
+		clear: both;
+		overflow: hidden;
+		padding-bottom: 2em;
+	}
 }
 
 /* Tablet Styles */
