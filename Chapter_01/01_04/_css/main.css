@@ -449,5 +449,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 /* desktop */
 
 @media only screen and (min-width: 769px) {
-	
+
+	body {
+		width: 90%;
+		margin: 0 auto;
+		min-width: 1024px;
+		max-width: 1280px;
+	}
+
+	header {
+		height: 165px;
+	}
+
+	.mission{
+		height: 350px;
+		padding-left: 3.9%;
+		overflow: hidden;
+		background: url(../_images/gallery_banner.jpg) no-repeat;
+		margin-bottom: 4em;
+		position: relative;
+	}
+
+	article {
+		float: left;
+		width: 70.1%;
+		padding-left: 3.9%
+	}
+
+	article section {
+		border-bottom: 2px solid rgb(76, 67, 65);
+		margin-bottom: 2em;
+	}
+
+	aside {
+		float: right;
+		width: 19.1%;
+		padding-right: 3.9%
+	}
+
+	#pageFooter {
+		clear: both;
+		overflow: hidden;
+		height: 150px;
+	}
 }
