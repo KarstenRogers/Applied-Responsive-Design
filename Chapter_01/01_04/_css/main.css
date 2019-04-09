@@ -444,6 +444,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
+	body {
+		width: 90%;
+		margin: 0 auto;
+		min-width: 500px;
+		max-width: 768px;
+	}
+
+	header {
+		height: 165px;
+	}
+
+	.mission {
+		padding-left: 3.9%;
+		overflow: hidden;
+		background: url(../_images/sm_skyline.jpg) no-repeat;
+		margin-bottom: 3em;
+		position: relative;
+	}
+
+	article {
+		width: 92.2%;
+		padding: 0 3.9%;
+	}
+
+	article section {
+		border-bottom: 2px solid rgb(76, 67, 65);
+		margin-bottom: 1.6em;
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 1.6em;
+	}
+
+	aside {
+		width: 92.2%;
+		padding: 0 3.9%;
+	}
+
+	aside section {
+		clear: both;
+	}
+
+	#pageFooter {
+		clear: both;
+		overflow: hidden;
+		height: 150px;
+	}
 }
 
 /* desktop */
