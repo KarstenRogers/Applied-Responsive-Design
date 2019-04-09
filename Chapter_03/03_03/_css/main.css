@@ -181,7 +181,27 @@ header a:hover {
 	border: none;
 	color: white;
 }
-
+/*nav styles*/
+#mainNav {
+	overflow: hidden;
+	margin-bottom: 1.5em;
+	}
+#mainNav li {
+	float: left;
+	}
+#mainNav a {
+	text-transform: uppercase;
+	display: block;
+	color: rgb(76, 67, 65);
+	border: none;
+	}
+#mainNav a:hover {
+	color: rgb(123, 121, 143);
+}
+#mainNav a.current {
+	color: rgb(123, 121, 143);
+	cursor: default; 
+	}
 
 /* mission styles*/
 .mission h1 {
@@ -447,7 +467,30 @@ header h1 {
 header h2 {
 	display: none;
 }
+/*nav styles*/
+#mainNav {
+	width: 300px;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
 
+#mainNav li {
+	margin-right: 5%;
+}
+
+#mainNav li:last-child {
+	margin-right: 0;
+}
+
+#mainNav a {
+	font-size: .9em;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#mainNav a em {
+	display: none;
+}
 
 /* mission styles*/
 .mission {
@@ -703,6 +746,29 @@ header h1 {
 }
 
 header h2 {
+	display: none;
+}
+/*nav styles*/
+#mainNav {
+	width: 450px;
+	margin: 0 auto;
+}
+
+#mainNav li {
+	margin-right: 10%;
+}
+
+#mainNav li:last-child {
+	margin-right: 0;
+}
+
+#mainNav a {
+	font-size: 1.2em;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+#mainNav a em {
 	display: none;
 }
 
@@ -1041,7 +1107,30 @@ header h2 {
 	letter-spacing:.1em;
 	line-height: 165px;
 }
+/*nav styles*/
+#mainNav {
+	padding-left: 3.9%;
+}
 
+#mainNav li {
+	margin-right: 3.6em;
+}
+
+#mainNav a {
+	font-size: 1.2em;
+	text-align: center;
+	padding-left: 15px;
+}
+
+#mainNav a em {
+	color: rgb(76, 67, 65);
+}
+
+#mainNav em {
+	font-size: .8em;
+	display: block;
+	text-transform: lowercase;
+}
 /* mission styles*/
 .mission {
 	height: 350px;
