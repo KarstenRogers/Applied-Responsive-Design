@@ -499,6 +499,21 @@ body {
 header {
 	height: 165px;
 }
+
+header h1 {
+	font-size: 3.2em;
+	padding-left: 110px;
+	line-height: 165px;
+	width: 270px;
+	margin: 0 auto;
+	background: url(../_images/desolve_logo.png) no-repeat left center;
+}
+
+header h2 {
+	display: none;
+}
+
+
 /* mission styles*/
 .mission {
 	padding-left: 3.9%;
@@ -507,6 +522,22 @@ header {
 	margin-bottom: 3em;
 	position: relative;
 }
+
+.mission h1 {
+	font-weight: bold;
+	font-size: 120%;
+	color: #fff;
+	letter-spacing:.1em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+.mission p {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 220px;
+}
+
 /* article styles */
 article {
 	width: 92.2%;
@@ -520,6 +551,189 @@ article section {
 	position: relative;
 	padding-bottom: 1.6em;
 }
+
+article h1 {
+	background: url(../_images/icon_sprites_50.png) no-repeat right top;
+	padding: 20px 0 5px;
+}
+
+article h2 {
+	font: 2.4em Cardo, Georgia, serif;
+	float: left;
+	clear: left;
+	margin-bottom: 0;
+	width: 40%;
+}
+
+article p {
+	font-size: 1em;
+	margin: 0;
+	float: left;
+	clear: left;
+	width: 40%
+}
+
+article p.pubdate {
+	font-size: 1em;
+	text-transform: uppercase;
+	float: left;
+	clear: left;
+	margin: 0 0 4em;
+	width: 40%;
+}
+
+article .preview {
+	height: 175px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55%;
+}
+
+.philly .preview {
+	background: url(../_images/sm_philly_banner.jpg) no-repeat;
+}
+
+.chicago .preview {
+	background: url(../_images/sm_chicago_banner.jpg) no-repeat;
+}
+
+.nyc .preview {
+	background: url(../_images/sm_nyc_banner.jpg) no-repeat;
+}
+
+/*gallery styles*/
+#gallery h1 {
+	font: 6.2em OstrichSansBold;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: rgba(123, 121, 143,.8)
+}
+
+/*gallery title styles*/
+.char1 {
+	text-shadow: 0 -.2em .02em rgba(226,100,100,.6), 0 .2em .02em rgba(102,151,188,.6);
+}
+
+.char2 {
+	text-shadow: 0 -.18em .02em rgba(226,100,100,.6), 0 .18em .02em rgba(102,151,188,.6);
+}
+
+.char3 {
+	text-shadow: 0 -.14em .01em rgba(226,100,100,.6), 0 .14em .01em rgba(102,151,188,.6);
+}
+
+.char4 {
+	text-shadow: 0 -.1em .01em rgba(226,100,100,.6), 0 .1em .01em rgba(102,151,188,.6);
+}
+
+.char5 {
+	text-shadow: 0 -.06em 0 rgba(226,100,100,.6), 0 .06em 0 rgba(102,151,188,.6);
+}
+
+.char6 {
+	text-shadow: 0 -.02em 0 rgba(226,100,100,.6), 0 .02em 0 rgba(102,151,188,.6);
+}
+
+.char7 {
+	text-shadow: 0 .02em 0 rgba(226,100,100,.6), 0 -.02em 0 rgba(102,151,188,.6);
+}
+
+.char8 {
+	text-shadow: 0 .06em 0 rgba(226,100,100,.6), 0 -.06em 0 rgba(102,151,188,.6);
+}
+
+.char9 {
+	text-shadow: 0 .1em .01em rgba(226,100,100,.6), 0 -.1em .01em rgba(102,151,188,.6);
+}
+
+.char10 {
+	text-shadow: 0 .14em .01em rgba(226,100,100,.6), 0 -.14em .01em rgba(102,151,188,.6);
+}
+
+.char11 {
+	text-shadow: 0 .18em .02em rgba(226,100,100,.6), 0 -.18em .02em rgba(102,151,188,.6);
+}
+
+.char12 {
+	text-shadow: 0 .2em .02em rgba(226,100,100,.6), 0 -.2em .02em rgba(102,151,188,.6);
+}
+
+.intro p {
+	font-size: .8em;
+	margin: 0 0 1em;
+	float: none;
+	clear: none;
+	width: auto;
+}
+
+.intro {
+	margin-bottom: 2em;
+}
+
+.photos {
+	-moz-column-count: 2;
+	-moz-column-gap: .5em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: .5em;
+	column-count: 2;
+	column-gap: .5em;
+	margin-bottom: 2em;
+}
+
+.photos img {
+	width: 100%;
+	margin-bottom: .5em;
+}
+.photos li {
+	position: relative;
+	float: none;
+}
+
+#gallery .photos a:after {
+	content: attr(title);
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 2em;
+	color: white;
+	text-align: center;
+	background: rgba( 25, 25, 25, .8);
+	z-index: 500;
+}
+
+/*contact styles*/
+#contact ul li {
+	width: 38%;
+	display: inline-block;
+}
+
+#contact h2 {
+	font-size: 1.4em;
+	float: none;
+	clear: left;
+	margin-bottom: 1.5em;
+	width: auto;
+}
+
+/*form styles*/
+fieldset {
+	width: 90%;
+}
+
+input[type="text"], input[type="email"], input[type="url"], textarea {
+	width: 95%;
+}
+
+fieldset p {
+	float: none;
+	width: auto;
+}
+
+
 /*aside styles*/
 aside {
 	width: 92.2%;
@@ -529,13 +743,73 @@ aside {
 aside section {
 	clear: both;
 }
+
+aside h2 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	border-top: 2px solid rgb(76, 67, 65);
+	padding-top: .8em;
+}
+
+aside nav h2 {
+	float: left;
+	margin-right: 1em;
+	font-size: 1.6em;
+	border: none;
+	padding-top: 0;
+}
+
+aside nav {
+	margin-bottom: 2em;
+}
+
+nav select {
+	float: left;
+	margin-top: 1em;
+	width: 200px;
+}
+
+.contest img {
+	float: left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+.contest p {
+	font-size: .9em;
+	margin-bottom: 1.5em;
+	width: 85%;
+	line-height: 2;
+}
+
+.enter a {
+	clear: both;
+	display: block;
+}
+
 /*footer styles*/
 #pageFooter {
 	clear:both;
 	overflow:hidden;
 	height: 150px;
 }
-	
+
+#pageFooter form {
+	float: left;
+	margin-left: 3.9%;
+	display: inline;
+}
+
+.notice {
+	width: 300px;
+}
+
+#pageFooter p {
+	float: right;
+	clear: right;
+	margin-right: 3.9%;
+	text-align: right;
+}
 }
 
 /*desktop styles*/
