@@ -13,9 +13,6 @@
 <link rel="apple-touch-icon" sizes="114x114" href="_images/apple-touch-icon-114x114.png">
 <!-- iPad 3rd gen -->
 <link rel="apple-touch-icon" sizes="144x144" href="_images/apple-touch-icon-144x144.png">
-<!--[if lt IE 9]>
-<script src="_scripts/respond.min.js"></script>
-<![endif]-->
 <link href="_css/main.css" rel="stylesheet" media="screen, projection">
 </head>
 <body class="no-js">
@@ -157,6 +154,12 @@ Modernizr.load([
         'http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js',
 		'_scripts/desolve.js'  
     ]
+},
+{
+	// test for media query support, if not load respond.js
+    test : Modernizr.mq('only all'),
+    // If not, load the respond.js file
+    nope : '/_scripts/respond.js' 
 }
 ]); 
 </script>
